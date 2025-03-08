@@ -20,13 +20,15 @@ body {
 }
 
 :root {
-    --primary-color: #4169E1;
-    --secondary-color: #F1F1F1;
-    --dark-color: #212121;
+    --primary-color: #eeeeee;
+    --secondary-color: #CD3F3E;
+    --third-color: #FF9C91;
+    --forth-color: #1C2938;
 }
 
 a {
     text-decoration: none;
+    color: var(--primary-color);
 }
 
 li {
