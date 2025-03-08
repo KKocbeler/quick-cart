@@ -1,0 +1,12 @@
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+
+    svg {
+        cursor: pointer;
+        font-size: 2.2rem;
+    }
+}

@@ -1,0 +1,45 @@
+.nav-searchbar {
+    flex: 3;
+
+    form {
+        position: relative;
+
+        input {
+            width: 100%;
+            padding: 1.2rem 8rem 1.2rem 2rem;
+            border: .1rem solid gray;
+            border-radius: 2rem;
+            outline: none;
+        }
+
+        
+
+        span {
+            position: absolute;
+            background-color: var(--secondary-color);
+            top: 0;
+            right: 0;
+            width: 6rem;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0 2rem 2rem 0;
+            cursor: pointer;
+
+            svg {
+                color: var(--primary-color);
+                font-size: 2.2rem;
+            }
+        }
+    }
+
+    form:has(input:focus) {
+        outline: 2px solid var(--third-color);
+        border-radius: 2rem;
+
+        input {
+            border-color: transparent;
+        }
+    }
+}

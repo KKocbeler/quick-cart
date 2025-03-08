@@ -1,0 +1,11 @@
+.nav-profile {
+    .user {
+        cursor: pointer;
+        padding: .5rem 1rem;
+        border: .1rem solid var(--forth-color);
+        border-radius: .5rem;
+        display: flex;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+}
