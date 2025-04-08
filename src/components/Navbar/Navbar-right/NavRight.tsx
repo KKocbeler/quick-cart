@@ -1,12 +1,12 @@
 import './NavRight.scss';
-import NavProfile from "./Nav-right-inner/NavProfile";
 import NavCart from "./Nav-right-inner/NavCart";
-import { CiHeart } from 'react-icons/ci';
+import { CiHeart, CiUser } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
 const NavRight = () => {
   return (
     <ul className="nav-right">
-        <li><NavProfile /></li>
-        <li><CiHeart /></li>
+        <li><Link to={"my-account"}><CiUser /> <span>My Account</span></Link></li>
+        <li><Link to={"/my-favorite"}> <CiHeart /> <span>My Favorite</span> </Link> </li>
         <li><NavCart /></li>
     </ul>
   )

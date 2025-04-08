@@ -3,10 +3,19 @@
     justify-content: flex-end;
     align-items: center;
     gap: 1.5rem;
-    flex: 1;
 
-    svg {
-        cursor: pointer;
-        font-size: 2.2rem;
+    li:not(:last-child) {
+
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            gap: .4rem;
+            cursor: pointer;
+        }
+
+        svg {
+            font-size: 2rem;
+        }
     }
 }
