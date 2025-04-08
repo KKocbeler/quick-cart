@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import './NavLogo.scss';
 
 const NavLogo = () => {
     return (
         <div className='nav-logo'>
-            Veesa 
+            <Link to={'/'}>Veesa</Link> 
         </div>
     )
 }
