@@ -1,80 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 .nav-section {
-    width: 100%;
-    background-color: var(--forth-color);
-    text-transform: capitalize;
+    padding: 1rem;
 
-    .section-list {
+    .categories {
         display: flex;
-        align-items: center;
         justify-content: center;
-        gap: 4rem;
-        
-        > li {
-            color: var(--primary-color);
-            font-family: "Montserrat", sans-serif;
-            font-weight: 300;
-            padding: 1rem;
-            cursor: pointer;
+        gap: 3rem;
 
-            .dropdown-menu {
-                position: absolute;
-                width: 100vw;
-                height: 45rem;
-                left: 0;
-                top: 11.7rem;
-                visibility: hidden;
-                opacity: 0;
-                transition: all .5s ease;
-
-                img {
-                    display: none;
-                }
+        .category {
+            a {
+                font-size: 1.3rem;
             }
-
-            .dropdown-menu.show {
-                display: flex;
-                justify-content: space-evenly;
-                visibility: visible;
-                opacity: 1;
-                background-color: var(--primary-color);
-                
-                
-                .dropdown-menu__list {
-                    margin-top: 5rem;
-                    color: var(--forth-color);
-
-                    > h4 {
-                        font-size: 1.8rem;
-                        font-weight: bold;
-                    }
-
-                    > ul {
-                        > li {
-                            color: var(--forth-color);
-                            margin: 1rem 0;
-                            transition: color .3s ease;
-                        }
-
-                        > li:hover {
-                            color: var(--secondary-color);
-                        }
-                    }
-                }
-
-                .dropdown-menu__img {
-                    margin-top: 5rem;
-                    img {
-                        display: block;
-                        object-fit: cover;
-                        width: 30rem;
-                        height: 35rem;
-                    }
-                }
-
-            }
+            
         }
     }
-
 }
