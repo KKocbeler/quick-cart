@@ -6,16 +6,18 @@
 
         input {
             width: 100%;
-            padding: 1.2rem 8rem 1.2rem 2rem;
+            padding: 1rem 8rem 1rem 2rem;
             border: .1rem solid gray;
             border-radius: 2rem;
             outline: none;
+            font-size: 1.5rem;
         }
 
         
 
-        span {
+        button {
             position: absolute;
+            border: none;
             background-color: var(--secondary-color);
             top: 0;
             right: 0;
