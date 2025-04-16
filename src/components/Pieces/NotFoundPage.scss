@@ -1,0 +1,35 @@
+.not-found-page {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+
+    .page-body {
+        text-align: center;
+        margin-top: 8rem;
+
+        div {
+            font-size: 6rem;
+            color: var(--secondary-color);
+        }
+
+        p {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+
+        a {
+            border: none;
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+            border: .1rem solid var(--secondary-color);
+            padding: 1rem 3rem;
+            transition: all .2s ease;
+
+            &:hover {
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
+            }
+        }
+    }
+
+}

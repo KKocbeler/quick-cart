@@ -1,0 +1,41 @@
+.star {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    &.large {
+        div.star-icons {
+            svg {
+                font-size: 1.6rem;
+            }
+    
+            svg {
+                &.unlight {
+                    color: var(--star-color);
+                }
+            }
+        }
+    
+        .comment-count {
+            font-size: 1.2rem;
+        }
+    }
+
+    div.star-icons {
+        svg {
+            font-size: 1.4rem;
+            color: var(--filled-star-color);
+        }
+
+        svg {
+            &.unlight {
+                color: var(--star-color);
+            }
+        }
+    }
+
+    .comment-count {
+        font-size: 1rem;
+        margin-bottom: .2rem
+    }
+}
