@@ -1,0 +1,119 @@
+.comment-section {
+    .comment-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: end;
+            .average-star {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+            }
+
+            .total-stars {
+                display: grid;
+                gap: .5rem;
+                border: .1rem solid var(--border-color);
+                padding: 2rem 4rem;
+
+                > div {
+                    display: flex;
+                    gap: .5rem;
+                    .star-rank {
+                        display: flex;
+                        align-items: center;
+                        gap: .3 rem;
+                        font-size: 1.4rem;
+                        margin-right: 1rem;
+
+                        svg {
+                            color: var(--filled-star-color);
+                        }
+                    }
+
+                    .review-count {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .left {
+            margin-bottom: 2rem;
+            .title {
+                span {
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                }
+                margin-bottom: 1.5rem;
+            }
+
+            .image {
+                img {
+                    display: block;
+                    height: 20rem;
+                }
+            }
+        }
+
+    }
+
+    .comments {
+        display: grid;
+        gap: 2rem;
+        padding: 1rem;
+
+        .comment {
+            padding: 2rem;
+            border: .1rem solid var(--border-color);
+
+            .comment__header {
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+    
+                .user-sec {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    font-size: 1.5rem;
+
+                    .avatar {
+                        img {
+                            border-radius: 50%;
+                            height: 2.5rem;
+                        }
+                    }
+                }
+            }
+
+            .comment__body {
+                margin: 1rem 0;
+                font-size: 1.4rem;
+            }
+        }
+
+
+    }
+
+    .more-less-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+
+        &.close {
+            display: none;
+        }
+    }
+
+    .comment-count {
+        display: none;
+    }
+}

@@ -1,0 +1,61 @@
+.detail-product-info {
+    .info {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 8rem;
+
+        .product-img {
+            img {
+                display: block;
+                height: 20rem;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .info-section {
+            .title {
+                font-size: 1.8rem;
+                margin-bottom: 1.5rem;
+            }
+    
+            .info-list {
+                columns: 2;
+                li {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.4rem;
+                    margin-bottom: 1rem;
+    
+                    
+                    &::before {
+                        content: '\2022';
+                        color: var(--secondary-color);
+                        font-size: 2rem;
+                        margin-right: .5rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .feature {
+        ul {
+            columns: 2;
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2rem 1rem;
+                margin-bottom: 1rem;
+                font-size: 1.3rem;
+
+                .question {
+                    color: gray;
+                }
+            }
+        }
+    }
+
+}

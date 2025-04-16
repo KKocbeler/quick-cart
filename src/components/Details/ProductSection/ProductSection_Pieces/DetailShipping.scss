@@ -1,0 +1,28 @@
+.detail-shipping {
+
+    .shipping_info_box {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem;
+        margin-bottom: 3rem;
+
+        .info_box__image {
+            img {
+                display: block;
+                height: 15rem;
+            }
+        }
+
+        .info_box__body {
+            .title {
+                font-size: 1.8rem;
+                margin-bottom: 1.2rem;
+            }
+
+            p {
+                line-height: 1.6;
+            }
+        }
+    }
+}

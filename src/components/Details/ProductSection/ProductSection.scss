@@ -1,0 +1,27 @@
+#product-section {
+    border: .1rem solid var(--border-color);
+
+    .tabs {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+
+        .tab-btn {
+            flex: 1;
+            cursor: pointer;
+            padding: 2rem 0;
+            border: .1rem solid transparent;
+            background-color: transparent;
+
+            &.active {
+                border-bottom: .2rem solid var(--secondary-color);
+            }
+        }
+
+    }
+
+    .body {
+        padding: 4rem 5rem;
+    }
+}
