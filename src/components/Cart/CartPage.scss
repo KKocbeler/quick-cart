@@ -1,0 +1,134 @@
+.cart-page {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 2rem;
+    margin: 3rem 5rem;
+
+    &.empty {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .cart-products {
+        .cart-header {
+            display: grid;
+            grid-template-columns: 4fr 1fr 1fr 1fr;
+            margin-bottom: 2rem;
+
+            & > div:not(.t-product) {
+                text-align: center;
+            }
+
+            & > div {
+                font-weight: bold;
+            }
+        }
+
+        .cart-product {
+            display: grid;
+            grid-template-columns: 4fr 1fr 1fr 1fr;
+            margin-bottom: 2rem;
+            border-bottom: .1rem solid var(--border-color);
+            padding-bottom: 1rem;
+
+            & > div:not(.b-product) {
+                text-align: center;
+            }
+
+            .b-product {
+                display: flex;
+                flex: 1;
+
+                .img {
+                    max-height: 12rem;
+                    img {
+                        display: block;
+                        object-fit: cover;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .b-quantity {
+                .body {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.5rem;
+
+                    svg {
+                        font-size: 1rem;
+
+                    }
+                }
+
+            }
+
+            .b-price {
+            }
+            
+        }
+    }
+
+    .bill {
+        .title {
+            margin-bottom: 5rem;
+        }
+        .bill-prices {
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+
+            & > div {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .shipping {
+
+                .prices {
+                    .shipping-price {
+                        label {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 1rem;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+
+            }
+
+            > button {
+                border: none;
+                padding: 1.5rem;
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
+                font-size: 1.6rem;
+                margin-top: 4rem;
+                cursor: pointer;
+            } 
+        }
+    }
+
+    .empty-cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30rem;
+
+        svg {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+    }
+}
