@@ -1,0 +1,121 @@
+.fashion-deals {
+    margin-top: 4rem;
+    padding: 1rem 0;
+
+    .fashion-deals__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .deal-list {
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .deal-item {
+                        border: .1rem solid var(--border-color);
+                        a {
+                            position: relative;
+                            .deal-img {
+                                overflow: hidden;
+                                padding: 4rem 3rem 2rem 3rem;
+                                
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: contain;
+                                    transition: all .3s;
+                                    height: 20rem;
+                                }
+        
+
+                            }
+    
+    
+                            .deal-info {
+                                display: flex;
+                                flex-direction: column;
+                                height: 12rem;
+                                padding: 1rem;
+                                    
+                                .stars {
+                                    margin-bottom: 1rem;
+                                }
+
+                                .name {
+                                    font-size: 1.4rem;
+                                    flex: 1;
+
+                                    .brand {
+                                        font-size: 1.5rem;
+                                        font-weight: bold;
+                                    }
+                                }
+
+                                .price {
+                                    font-weight: bold;
+                                }
+
+                            }
+                        }
+
+                        .add-fav-button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            top: 1rem;
+                            right: 1rem;
+                            padding: 1rem;
+                            border-radius: 50%;
+                            transition: background-color .2s ease;
+                            z-index: 99;
+
+                            &:hover {
+                                background-color: rgba(194, 194, 194, 0.6);
+                            }
+
+                            &.fill {
+                                background-color: rgba(194, 194, 194, 0.6);
+                            }
+                            
+
+                            svg {
+                                color: var(--secondary-color);
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                color: var(--primary-color);
+            }
+                
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                font-weight: bold;
+                background-color: var(--secondary-color);
+                padding: 1rem 1.2rem;
+                border-radius: 50%;
+                transition: .2s all;
+            }
+
+            .swiper-button-prev:hover::after,
+            .swiper-button-next:hover::after {
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
+            }
+
+            .swiper-button-disabled,
+            .swiper-button-disabled {
+                opacity: 0;
+            }
+        }
+    }
+}
