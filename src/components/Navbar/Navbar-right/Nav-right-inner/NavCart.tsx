@@ -48,7 +48,7 @@ const NavCart = () => {
                                     <div className="product-features">
                                         <div className="product-img">
                                             <img
-                                                src={"/img/format_webp.webp"}
+                                                src={product.image}
                                                 alt={product.name}
                                                 loading="lazy"
                                             />
