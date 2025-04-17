@@ -1,0 +1,66 @@
+.my-account {
+    display: grid;
+    grid-template-columns: 25rem auto;
+    gap: 2rem;
+    margin: 3rem 0 5rem 0;
+
+    aside {
+        .user-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem;
+            .user-avatar {
+                padding: 2rem;
+                border-radius: 50%;
+                background-color: rgb(224, 224, 224);
+                margin-bottom: 1rem;
+                svg {
+                    height: 2rem;
+                    width: 2rem;
+                    color: var(--secondary-color);
+                }
+            }
+    
+            .username {
+                font-size: 1.6rem;
+            }
+    
+            .user-email {
+                font-size: 1.3rem;
+                color: var(--forth-color);
+            }
+        }
+
+        .account-list {
+            display: grid;
+            margin-top: 2rem;
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 1.5rem 2rem;
+                cursor: pointer;
+
+                > div {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1.5rem;
+                    svg {
+                        font-size: 2.4rem;
+                    }
+
+                    span {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    section {
+    }
+}
