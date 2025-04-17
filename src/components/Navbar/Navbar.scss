@@ -1,12 +1,13 @@
 .navbar {
     background-color: var(--primary-color);
-    padding: 1.5rem 0;
+    border-bottom: .1rem solid var(--secondary-color);
 
     > div {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0;
+        gap: 5rem;
+        height: 8rem;
 
         .nav-user {
             display: flex;
