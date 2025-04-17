@@ -1,0 +1,47 @@
+.home-adds {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+    border: .1rem solid var(--border-color);
+    background: linear-gradient(to right, #141011 30%, #ffffff 80%);
+
+    .left-side {
+        display: flex;
+        align-items: center;
+
+        > div {
+            padding: 2rem 2rem;
+            color: var(--primary-color);
+            font-size: 2rem;
+            font-family: "Dancing Script", cursive;
+        }
+
+        > div:not(:last-child) {
+            border-right: .1rem solid var(--primary-color);
+        }
+
+        img {
+            height: 8rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .right-side {
+        a {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 1.2rem 3rem;
+            border-radius: 3rem;
+        }
+    }
+
+    img {
+        cursor: pointer;
+        width: 100%;
+        object-fit: contain;
+        display: block;
+       
+    }
+}
