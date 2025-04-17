@@ -30,10 +30,10 @@ const CartPage = () => {
                                 <div className='t-price'>Price</div>
                             </div>
                             {cartList.map((item) => (
-                                <div className='cart-product' key={item.id + item.selectedColor}>
+                                <div className='cart-product' key={item.id}>
                                     <div className="b-product">
                                         <div className="img">
-                                            <img src="/img/format_webp.webp" alt={item.name} />
+                                            <img src={item.image} alt={item.name} loading='lazy'/>
                                         </div>
                                         <div className="info">{item.name}</div>
                                     </div>

@@ -1,7 +1,7 @@
 .cart-page {
     display: grid;
-    grid-template-columns: 4fr 2fr;
-    gap: 2rem;
+    grid-template-columns: 5fr 2fr;
+    gap: 3rem;
     margin: 3rem 5rem;
 
     &.empty {
@@ -9,11 +9,12 @@
     }
 
     .title {
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 2rem;
     }
 
     .cart-products {
+
         .cart-header {
             display: grid;
             grid-template-columns: 4fr 1fr 1fr 1fr;
@@ -44,10 +45,12 @@
                 flex: 1;
 
                 .img {
-                    max-height: 12rem;
+                    max-height: 10rem;
                     img {
+                        height: 12rem;
+                        width: 16rem;
                         display: block;
-                        object-fit: cover;
+                        object-fit: contain;
                         height: 100%;
                     }
                 }
