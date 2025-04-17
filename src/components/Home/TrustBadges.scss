@@ -1,0 +1,28 @@
+.trust-bages {
+    margin: 8rem 0;
+
+    .bage-list {
+        display: flex;
+
+        .bage-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 2rem;
+            border-left: 1px solid var(--forth-color);
+
+            svg {
+                font-size: 3.2rem;
+                color: var(--secondary-color);
+            }
+
+            span {
+                font-size: 1.8rem;
+            }
+        }
+        .bage-item:first-child {
+            border: none;
+        }
+    }
+}
