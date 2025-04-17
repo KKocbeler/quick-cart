@@ -1,9 +1,8 @@
 import './FashionDeals.scss';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import data from '../../data/data.json'
@@ -64,7 +63,6 @@ const FashionDeals: React.FC<FashionDealsProps> = ({category}) => {
             slidesPerGroup={2}
             speed={750}
             navigation
-            pagination={{ clickable: true}}
             scrollbar={{ draggable: true }}
             >
                     {

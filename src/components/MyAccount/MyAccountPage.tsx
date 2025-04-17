@@ -3,7 +3,7 @@ import './MyAcccontPage.scss';
 import { CiGift, CiHeart, CiLogout, CiSettings, CiShoppingCart } from 'react-icons/ci';
 import { PiAddressBookLight } from 'react-icons/pi';
 import { GoChevronRight } from 'react-icons/go';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import FavoritePage from '../Favorite/FavoritePage';
 
 const MyAccountPage = () => {

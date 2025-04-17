@@ -8,12 +8,12 @@ import { FixLinkText } from "../../utility/FixLinkText";
 import Star from "../Pieces/Star";
 import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
 import FashionDeals from "../Home/FashionDeals";
-import { Swiper } from 'swiper/react';
+import { Swiper, SwiperClass } from 'swiper/react';
 import { Navigation, Thumbs } from "swiper/modules";
 import { SwiperSlide } from "swiper/react";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import ProductSection from "./ProductSection/ProductSection";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "../../store/cartSlice";
@@ -22,7 +22,7 @@ const DetailPage = () => {
     const [selectedProduct, setSelectedProduct] = useState<DataProps | null>(null);
     const { name } = useParams();
     const [selectedColor, setSelectedColor] = useState('');
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
     const dispatch = useDispatch()
 
     useEffect(() => {

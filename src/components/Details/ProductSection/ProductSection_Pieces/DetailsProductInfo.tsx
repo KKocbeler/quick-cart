@@ -1,4 +1,5 @@
-import { DataProps } from '../../proptypes/DataProps';
+
+import { DataProps } from '../../../../proptypes/DataProps';
 import './DetailsProductInfo.scss';
 
 interface PropsType {

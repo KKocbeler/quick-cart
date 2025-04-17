@@ -11,7 +11,7 @@ import LoadingPage from '../Pieces/LoadingPage';
 
 const FavoritePage = () => {
     const [favProducts, setFavProducts] = useState<DataProps[]>([]);
-    const { loading, setLoading, error, setError} = useStatus();
+    const { loading, setLoading, setError} = useStatus();
 
     useEffect(() => {
         setLoading(true)
