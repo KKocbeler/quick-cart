@@ -1,54 +1,55 @@
-# React + TypeScript + Vite
+# 🛍️ Vessa E-Commerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Vessa** is a modern and responsive e-commerce web application where users can browse products, filter them by category, view detailed information, and manage their shopping cart using fake data.
 
-Currently, two official plugins are available:
+## 🖼️ Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Home Page](public/img/github-img/vessa-home-page.png)
+![Cart](public/img/github-img/vessa-cart.png)
+![Mini Cart](public/img/github-img/vessa-mini-cart.png)
+![Search](public/img/github-img/vessa-search.png)
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🔎 Filter products by category/type
+- 📄 View product details
+- 🛒 Add to cart and manage selected items
+- 🧮 See total price dynamically
+- 📱 Fully responsive for all devices
+- 📂 Uses local fake data (JSON-based)
+- ⚡ Clean and fast user experience
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Built With
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- [React.js]
+- [React Router]
+- [Redux Toolkit]
+- [SCSS]
+- [JavaScript (ES6+)]
+- Fake JSON data (local file for mocking content)
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## 📦 Getting Started
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/KKocbeler/vessa-e-commerce.git
+
+# Go to the project folder
+cd vessa-e-commerce
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+## 📫 Contact
+Email: kkocbeler@gmail.com
+LinkedIn: Kemal Koçbeler
