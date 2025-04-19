@@ -2,6 +2,8 @@
 
 **Vessa** is a modern and responsive e-commerce web application where users can browse products, filter them by category, view detailed information, and manage their shopping cart using fake data.
 
+ **Live Demo:** [https://vessa.netlify.app](https://vessa.netlify.app)
+
 ## 🖼️ Screenshots
 
 ![Home Page](public/img/github-img/vessa-home-page.png)
