@@ -17,12 +17,14 @@ import "swiper/css/pagination";
 import ProductSection from "./ProductSection/ProductSection";
 import { useDispatch } from "react-redux";
 import { addItemToCart } from "../../store/cartSlice";
+import { FaCheck } from "react-icons/fa6";
 
 const DetailPage = () => {
     const [selectedProduct, setSelectedProduct] = useState<DataProps | null>(null);
     const { name } = useParams();
     const [selectedColor, setSelectedColor] = useState('');
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
+    const [showAddedBar, setShowAddedBar] = useState(false)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -46,6 +48,7 @@ const DetailPage = () => {
     }, [data, name])
 
     const handleAddToCart = () => {
+        setShowAddedBar(true);
         if(!selectedProduct) return ;
 
         dispatch(addItemToCart({
@@ -53,6 +56,10 @@ const DetailPage = () => {
             selectedColor: selectedColor || selectedProduct.color[0],
             quantity: 1
         }));
+
+        setTimeout(() => {
+            setShowAddedBar(false);
+        }, 1000);
     }
 
     const detailsImage: string[] = [
@@ -177,6 +184,11 @@ const DetailPage = () => {
                     }
                 </div>
             </div>
+            {showAddedBar && (
+            <div className="added-bar">
+                <FaCheck /> 1 Product added to cart
+            </div>
+            )}
         </div>
         {selectedProduct && <ProductSection product={selectedProduct}/>}
         <div className="more-like-this">

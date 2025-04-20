@@ -212,6 +212,34 @@
                 }
             }
         }
+
+        .added-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary-color);
+            border: .1rem solid var(--secondary-color);
+            color: var(--secondary-color);
+            padding: 10px 20px;
+            font-weight: bold;
+            z-index: 999;
+            animation: fadeInOut 3s ease forwards;
+
+            svg {
+                font-size: 2rem;
+            }
+
+            @keyframes fadeInOut {
+                0%   { opacity: 0; transform: translateX(-50%) translateY(10px); }
+                10%  { opacity: 1; transform: translateX(-50%) translateY(0); }
+                90%  { opacity: 1; }
+                100% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+            }
+        }  
     }
 
     .fashion-deals {
