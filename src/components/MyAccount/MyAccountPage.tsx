@@ -5,6 +5,7 @@ import { PiAddressBookLight } from 'react-icons/pi';
 import { GoChevronRight } from 'react-icons/go';
 import { useState } from 'react';
 import FavoritePage from '../Favorite/FavoritePage';
+import MyAddresses from './MyAccountPage/MyAddresses';
 
 const MyAccountPage = () => {
     const [showTab, setShowTab] = useState("My Addresses");
@@ -68,6 +69,8 @@ const MyAccountPage = () => {
         </aside>
         <section>
             {showTab === "My Favorites" && <FavoritePage />}
+            {showTab === "My Addresses" && <MyAddresses />}
+            {showTab === "My Orders" && <MyAddresses />}
         </section>
     </div>
   )
