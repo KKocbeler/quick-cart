@@ -1,6 +1,6 @@
 import { CiShoppingCart } from 'react-icons/ci';
 import './NavCart.scss';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../../store/store';
 import { deleteItemCart } from '../../../../store/cartSlice';
@@ -12,6 +12,7 @@ const NavCart = () => {
     const [showMiniCart, setShowMiniCart] = useState(false);
     const cartList = useSelector((state: RootState) => state.cart.cartList);
     const dispatch = useDispatch();
+    const miniCartRef = useRef<HTMLDivElement>(null);
 
     const { totalPrice, totalQuantity } = cartList.reduce(
         (acc, product) => {
@@ -26,6 +27,20 @@ const NavCart = () => {
         setShowMiniCart(!showMiniCart);
     };
 
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if(miniCartRef.current && !miniCartRef.current.contains(event.target as Node)) {
+                setShowMiniCart(false)
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside)
+        }
+    }, [])
+
     return (
         <div className='nav-cart'>
             <div className="my-cart" onClick={miniCartToggle} >
@@ -34,7 +49,7 @@ const NavCart = () => {
             </div>
             
 
-            <div className={`mini-cart ${showMiniCart ? 'show' : ''}`} >
+            <div ref={miniCartRef} className={`mini-cart ${showMiniCart ? 'show' : ''}`} >
                 {cartList.length > 0 ? (
                     <>
                         <div className="added-products">
