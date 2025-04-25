@@ -1,0 +1,87 @@
+.account {
+    position: relative;
+    .title {
+        display: flex;
+        align-items: center;
+        gap: .2rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .account-dropdown {
+        position: absolute;
+        top: 4.2rem;
+        left: -100%;
+        border: .1rem solid var(--forth-color);
+        border-radius: .5rem;
+        background-color: var(--primary-color);
+        min-width: 16rem;
+        z-index: 98;
+        visibility: hidden;
+        opacity: 0;
+        &.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        ul {
+            li {
+                border-radius: .5rem;
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: .5rem;
+                    font-size: 1.3rem;
+                    padding: .8rem 1rem;
+                    cursor: pointer;
+                    transition: all .2s ease;
+                }
+            }
+
+            & > li:hover {
+                background-color: var(--border-color);
+            }
+
+            &:last-child {
+                &:hover {
+                    border-radius: 0 0 .5rem .5rem;
+                }
+            }
+
+            &:first-child {
+                &:hover {
+                    border-radius: .5rem .5rem 0 0;
+                }
+            }
+        }
+    }
+
+    .direction-border {
+        display: none;
+        position: absolute;
+        bottom: -2.5rem;
+        right: 0;
+        border-left: 1rem solid transparent;
+        border-right: 1rem solid transparent;
+        border-bottom: 1rem solid var(--secondary-color);
+
+        &.hovered::after {
+            border-bottom: 1rem solid var(--border-color); 
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 99;
+            bottom: -1rem;
+            left: -1rem;
+            border-left: 1rem solid transparent;
+            border-right: 1rem solid transparent;
+            border-bottom: 1rem solid var(--primary-color);
+        }
+    }
+
+    .direction-border.show {
+        display: block;
+    }
+}
