@@ -104,6 +104,10 @@
                         font-weight: bold;
                     }
                 }
+
+                .product-stars {
+                    cursor: pointer;
+                }
             }
 
             .product-body {
@@ -218,9 +222,8 @@
             align-items: center;
             gap: 1rem;
             position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
+            bottom: 2%;
+            left: 45%;
             background-color: var(--primary-color);
             border: .1rem solid var(--secondary-color);
             color: var(--secondary-color);
@@ -234,10 +237,9 @@
             }
 
             @keyframes fadeInOut {
-                0%   { opacity: 0; transform: translateX(-50%) translateY(10px); }
-                10%  { opacity: 1; transform: translateX(-50%) translateY(0); }
-                90%  { opacity: 1; }
-                100% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+                0%   { opacity: 0; transform: translateY(10px); }
+                10%  { opacity: 1; transform: translateY(0); }
+                100% { opacity: 0; transform: translateY(10px); }
             }
         }  
     }

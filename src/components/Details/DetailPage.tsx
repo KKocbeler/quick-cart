@@ -25,6 +25,7 @@ const DetailPage = () => {
     const [selectedColor, setSelectedColor] = useState('');
     const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
     const [showAddedBar, setShowAddedBar] = useState(false)
+    const [showTab, setShowTab] = useState<string>("Features");
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -90,6 +91,14 @@ const DetailPage = () => {
         alert('FREEEEEEEEEEEEEE')
     }
 
+    const navigateToComments = () => {
+        setShowTab("Reviews")
+        window.scrollBy({
+            top: 900,
+            behavior: "smooth"
+        })
+    }
+
   return (
     <div className="detail-page">
         <div className="orientation-arrows">
@@ -147,7 +156,9 @@ const DetailPage = () => {
             <div className="body-right">
                 <div className="product-header">
                     <div className="title"> <span>{selectedProduct?.brand}</span> {selectedProduct?.name} </div>
-                    <Star size={'large'} count={4} commentCount={selectedProduct?.commentCount || 2}/>
+                    <div className="product-stars" onClick={navigateToComments}>
+                        <Star size={'large'} count={selectedProduct?.star ?? 0} commentCount={selectedProduct?.commentCount}/>
+                    </div>
                 </div>
                 <div className="product-body">
                     <div className="price">${selectedProduct?.price}</div>
@@ -190,7 +201,7 @@ const DetailPage = () => {
             </div>
             )}
         </div>
-        {selectedProduct && <ProductSection product={selectedProduct}/>}
+        {selectedProduct && <ProductSection product={selectedProduct} showTab={showTab} setShowTab={setShowTab}/>}
         <div className="more-like-this">
             <div>More Like This</div>
             <FashionDeals category={selectedProduct?.category}/>
