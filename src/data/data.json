@@ -192,7 +192,7 @@
         "brand": "Levi’s",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 8
     },
     {
         "id": 14,
@@ -237,7 +237,7 @@
         "brand": "Steve Madden",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 26
     },
     {
         "id": 17,
@@ -252,7 +252,7 @@
         "brand": "Zara",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 4
     },
     {
         "id": 18,
@@ -267,7 +267,7 @@
         "brand": "Burberry",
         "isProductAddFav": false,
         "star": 3,
-        "commentCount": 12
+        "commentCount": 17
     },
     {
         "id": 19,
@@ -297,7 +297,7 @@
         "brand": "Oakley",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 37
     },
     {
         "id": 21,
@@ -312,7 +312,7 @@
         "brand": "English Home",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 23
     },
     {
         "id": 22,
@@ -327,7 +327,7 @@
         "brand": "Philips",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 11
     },
     {
         "id": 23,
@@ -342,7 +342,7 @@
         "brand": "English Home",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 7
     },
     {
         "id": 24,
@@ -357,7 +357,7 @@
         "brand": "English Home",
         "isProductAddFav": false,
         "star": 2,
-        "commentCount": 12
+        "commentCount": 15
     },
     {
         "id": 25,
@@ -372,7 +372,7 @@
         "brand": "IKEA",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 31
     },
     {
         "id": 26,
@@ -387,7 +387,7 @@
         "brand": "IKEA",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 47
     },
     {
         "id": 27,
@@ -402,7 +402,7 @@
         "brand": "Madame Coco",
         "isProductAddFav": false,
         "star": 3,
-        "commentCount": 12
+        "commentCount": 28
     },
     {
         "id": 28,
@@ -417,7 +417,7 @@
         "brand": "Madame Coco",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 14
     },
     {
         "id": 29,
@@ -432,7 +432,7 @@
         "brand": "English Home",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 25
     },
     {
         "id": 30,
@@ -447,7 +447,7 @@
         "brand": "Karaca",
         "isProductAddFav": false,
         "star": 3,
-        "commentCount": 12
+        "commentCount": 22
     },
     {
         "id": 31,
@@ -462,7 +462,7 @@
         "brand": "Nike",
         "isProductAddFav": false,
         "star": 2,
-        "commentCount": 12
+        "commentCount": 52
     },
     {
         "id": 32,
@@ -477,7 +477,7 @@
         "brand": "Puma",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 16
     },
     {
         "id": 33,
@@ -492,7 +492,7 @@
         "brand": "Adidas",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 27
     },
     {
         "id": 34,
@@ -507,7 +507,7 @@
         "brand": "Deuter",
         "isProductAddFav": false,
         "star": 2,
-        "commentCount": 12
+        "commentCount": 34
       },
       {
         "id": 35,
@@ -537,7 +537,7 @@
         "brand": "Skechers",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 22
       },
       {
         "id": 37,
@@ -552,7 +552,7 @@
         "brand": "Nike",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 17
       },
       {
         "id": 38,
@@ -567,7 +567,7 @@
         "brand": "Reebok",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 41
       },
       {
         "id": 39,
@@ -582,7 +582,7 @@
         "brand": "Reebok",
         "isProductAddFav": false,
         "star": 2,
-        "commentCount": 12
+        "commentCount": 33
       },
       {
         "id": 40,
@@ -597,7 +597,7 @@
         "brand": "Nike",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 13
       },
       {
         "id": 41,
@@ -612,7 +612,7 @@
         "brand": "Nivea",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 18
       },
       {
         "id": 42,
@@ -627,7 +627,7 @@
         "brand": "Nivea",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 15
       },
       {
         "id": 43,
@@ -642,7 +642,7 @@
         "brand": "Aveeno",
         "isProductAddFav": false,
         "star": 3,
-        "commentCount": 12
+        "commentCount": 47
       },
       {
         "id": 44,
@@ -657,7 +657,7 @@
         "brand": "Aveeno",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 76
       },
       {
         "id": 45,
@@ -672,7 +672,7 @@
         "brand": "Clear",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 3
       },
       {
         "id": 46,
@@ -687,7 +687,7 @@
         "brand": "Samsung",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 18
       },
       {
         "id": 47,
@@ -702,7 +702,7 @@
         "brand": "CeraVe",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 9
       },
       {
         "id": 48,
@@ -732,7 +732,7 @@
         "brand": "La Roche-Posay",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 11
       },
       {
         "id": 50,
@@ -747,7 +747,7 @@
         "brand": "La Roche-Posay",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 6
       },
       {
         "id": 51,
@@ -762,7 +762,7 @@
         "brand": "Scribner",
         "isProductAddFav": false,
         "star": 2,
-        "commentCount": 12
+        "commentCount": 25
       },
       {
         "id": 52,
@@ -777,7 +777,7 @@
         "brand": "Moleskine",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 42
       },
       {
         "id": 53,
@@ -807,7 +807,7 @@
         "brand": "Little, Brown and Company",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 16
       },
       {
         "id": 55,
@@ -822,7 +822,7 @@
         "brand": "Moleskine",
         "isProductAddFav": false,
         "star": 3,
-        "commentCount": 12
+        "commentCount": 61
       },
       {
         "id": 56,
@@ -837,7 +837,7 @@
         "brand": "Strathmore",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 46
       },
       {
         "id": 57,
@@ -852,7 +852,7 @@
         "brand": "Scholastic",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 13
       },
       {
         "id": 58,
@@ -867,7 +867,7 @@
         "brand": "Sharpie",
         "isProductAddFav": false,
         "star": 2,
-        "commentCount": 12
+        "commentCount": 6
       },
       {
         "id": 59,
@@ -882,7 +882,7 @@
         "brand": "Moleskine",
         "isProductAddFav": false,
         "star": 4,
-        "commentCount": 12
+        "commentCount": 15
       },
       {
         "id": 60,
@@ -897,7 +897,7 @@
         "brand": "Houghton Mifflin",
         "isProductAddFav": false,
         "star": 5,
-        "commentCount": 12
+        "commentCount": 7
       }
   ]
   
