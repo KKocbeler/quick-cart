@@ -13,7 +13,6 @@ import { FixLinkText } from '../../utility/FixLinkText';
 
 interface FashionDealsProps{
     category?: string;
-    data?: DataProps[];
 }
 
 const FashionDeals: React.FC<FashionDealsProps> = ({category}) => {
@@ -31,7 +30,7 @@ const FashionDeals: React.FC<FashionDealsProps> = ({category}) => {
 
         setNewData(filtered)
 
-    }, [category])
+    }, [category, data])
 
     const handleToggleFavorite = (id: number) => {
         setNewData(newData.map(dt => dt.id === id

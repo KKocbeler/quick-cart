@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { DataProps } from '../../../proptypes/DataProps';
 import DetailCommentSection from './ProductSection_Pieces/DetailCommentSection';
 import DetailsProductInfo from './ProductSection_Pieces/DetailsProductInfo';
@@ -8,11 +7,12 @@ import DetailShipping from './ProductSection_Pieces/DetailShipping';
 import DetailReturn from './ProductSection_Pieces/DetailReturn';
 
 interface PropsType {
-    product: DataProps 
+    product: DataProps; 
+    showTab: string;
+    setShowTab: (value: string) => void;
 }
 
-const ProductSection: React.FC<PropsType> = ({product}) => {
-  const [showTab, setShowTab] = useState("Features");
+const ProductSection: React.FC<PropsType> = ({product, showTab, setShowTab}) => {
   const tabs = ["Features", "Reviews", "Questions", "Shipping", "Return"]
 
   console.log(showTab)
