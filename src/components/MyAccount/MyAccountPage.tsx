@@ -53,7 +53,11 @@ const MyAccountPage = () => {
 
     const handleTab = (title: string, tab: string) => {
         setShowTab(title)
-        navigate(`/my-account/${FixLinkText(tab)}`)
+        if(tab !== "Logout") {
+          navigate(`/my-account/${FixLinkText(tab)}`)
+        } else {
+          navigate("/")
+        }
     };
 
   return (
@@ -80,7 +84,7 @@ const MyAccountPage = () => {
         <section>
             {showTab === "My Favorites" && <FavoritePage />}
             {showTab === "My Addresses" && <MyAddresses />}
-            {showTab === "My Orders" && <MyAddresses />}
+            {showTab === "My Orders" && <p>I haven't created this page yet.</p>}
         </section>
     </div>
   )
