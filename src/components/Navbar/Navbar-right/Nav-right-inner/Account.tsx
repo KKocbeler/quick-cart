@@ -49,7 +49,7 @@ const Account = () => {
             document.removeEventListener("mousedown", handleClickOutside);
         }
     }, [])
-
+ 
   return (
     <div className='account'>
         <div className="title" onClick={() => setDropdown(!dropdown)}> <CiUser /> Account </div>
@@ -58,7 +58,7 @@ const Account = () => {
                 {
                     accountList.map((item, index) => (
                         <li key={index} onClick={() => setDropdown(false)}>
-                            <Link to={`/my-account/${FixLinkText(item.title)}`} onMouseOver={() => index === 0 && setIsHovered(true)} onMouseLeave={() => index === 0 && setIsHovered(false)}>
+                            <Link to={item.title === "Logout" ? "/" : `/my-account/${FixLinkText(item.title)}`} onMouseOver={() => index === 0 && setIsHovered(true)} onMouseLeave={() => index === 0 && setIsHovered(false)}>
                                 {item.icon}
                                 <span>{item.title}</span>
                             </Link>
