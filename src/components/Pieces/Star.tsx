@@ -7,7 +7,7 @@ interface PropsType {
   commentCount?: number
 }
 
-const Star: React.FC<PropsType> = ({ size = "", count = 2, commentCount }) => {
+const Star: React.FC<PropsType> = ({ size = "", count, commentCount }) => {
   const totalStars = 5;
   const filledStars = count;
   const emptyStars = totalStars - filledStars;

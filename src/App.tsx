@@ -23,6 +23,7 @@ function App() {
                     <Route path='/search/:name' element={<SearchPage />} />
                     <Route path='/cart' element={<Cart /> } />
                     <Route path='/my-account' element={<MyAccount />} />
+                    <Route path='/my-account/:tab' element={<MyAccount />} />
                     <Route path='/my-favorite' element={<Favorite /> } />
                     <Route path='*' element={<NotFoundPage />} />
                 </Route>
