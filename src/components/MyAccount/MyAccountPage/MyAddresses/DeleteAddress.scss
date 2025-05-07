@@ -1,0 +1,65 @@
+.delete-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    transition: all .2s;
+    background-color: rgb(175, 175, 175, .3);
+    z-index: 999;
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+
+        .body {
+            transform: scale(1);
+        }
+
+    }
+
+    .body {
+        display: grid;
+        position: relative;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: .5rem;
+        background-color: var(--primary-color);
+        transform: scale(.9);
+        transition: all .2s;
+
+    
+        > div {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 1.6rem;
+        }
+    
+        p {
+            font-size: 1.3rem;
+        }
+    
+        button {
+            cursor: pointer;
+            margin: 0 auto;
+            width: fit-content;
+            padding: .7rem 1.4rem;
+            border: none;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+        }
+    
+        svg {
+            cursor: pointer;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+}
